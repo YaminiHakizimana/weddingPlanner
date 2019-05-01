@@ -11581,11 +11581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yamin/Desktop/Codingdojo/c#/ASP.NET/WeddingPlanner/WeddingPlanner.csproj",
+      "projectUniqueName": "/Users/yamin/Projects/weddingPlanner/WeddingPlanner.csproj",
       "projectName": "WeddingPlanner",
-      "projectPath": "/Users/yamin/Desktop/Codingdojo/c#/ASP.NET/WeddingPlanner/WeddingPlanner.csproj",
+      "projectPath": "/Users/yamin/Projects/weddingPlanner/WeddingPlanner.csproj",
       "packagesPath": "/Users/yamin/.nuget/packages/",
-      "outputPath": "/Users/yamin/Desktop/Codingdojo/c#/ASP.NET/WeddingPlanner/obj/",
+      "outputPath": "/Users/yamin/Projects/weddingPlanner/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

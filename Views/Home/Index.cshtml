@@ -1,34 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
-    
-</head>
-<body>
-
-@model User
-  
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    </head>
+    <body>
+        @model User
         <div class="container-fluid">
-                   
-                        
-                           
-                          
-                           <div class="jumbotron jumbotron-fluid" style="background-color:rgb(160, 150, 151) ">
-                                <div class="container">         
-                                
-                                
-                                </div>
-                           </div>
+            <div class="jumbotron jumbotron-fluid" style="background-color:rgb(160, 150, 151) ">
+                <div class="container">
 
-                        <div class="row">
-                                <div class="col">
-                                        
-                                 <div class="form-group">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
                         <form  action="/create", method="POST">
                             <span asp-validation-for="FirstName"></span>
                             <p>First Name: <input class="form-control"  asp-for="FirstName" ></p>
@@ -41,30 +30,23 @@
                             <span asp-validation-for="ConfirmationPassword"></span>
                             <p>Password Confirmation: <input class="form-control" asp-for="ConfirmationPassword" ></p>
                             <p><input type="submit" class="btn btn-secondary" value="Register" ></p>
-                            </form>
-                        </div>
-                    </div>
-                    <h1>@ViewBag.show</h1>
- 
-                    <div class="col">
-                        <h3 style="text-align:center">Login Here!</h3>
- 
-                        <form action="/Submit", method="POST">
-                        
-                            <span asp-validation-for="Email"></span>
-                            <p>Email: <input class="form-control" type="text" name="Email" ></p>
-                            <span asp-validation-for="Password"></span>
-                            <p>Password: <input class="form-control" type="password" name="Password" ></p>
-                            <p><input type="submit" class="btn btn-secondary" value="log in" ></p>
                         </form>
                     </div>
                 </div>
-
-    </div>
-    </div>
-
-
-</body>
+                <h1>@ViewBag.show</h1>
+                <div class="col">
+                    <h3 style="text-align:center">Login Here!</h3>
+                    <form action="/Submit", method="POST">
+                        <span asp-validation-for="Email"></span>
+                        <p>Email: <input class="form-control" type="text" name="Email" ></p>
+                        <span asp-validation-for="Password"></span>
+                        <p>Password: <input class="form-control" type="password" name="Password" ></p>
+                        <p><input type="submit" class="btn btn-secondary" value="log in" ></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
 
 
