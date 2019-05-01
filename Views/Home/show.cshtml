@@ -1,0 +1,9 @@
+@model Wedding
+<h3><a href="/dashboard">Dashboard|<a href="log_out">Logout</a></h3>
+<h2>@Model.WedderOne and @Model.WedderTwo</h2>
+<h4>@Model.Date.ToString("MMM d,yyy")</h4>
+<h5>Guest:</h5>
+@foreach(var i in ViewBag.Allguest.Users)
+{
+  <p>@i.Auser.FirstName @i.Auser.LastName</p>
+}
